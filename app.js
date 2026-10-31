@@ -3,7 +3,7 @@ const express = require('express');
 const app = express();
 app.use(express.json());
 
-const VERSION = 'v1';
+const VERSION = 'v2';
 
 let tareas = [
   { id: 1, titulo: 'Aprender AWS CodePipeline', completada: false },
