@@ -1,0 +1,17 @@
+{
+  "name": "api-codepipeline-taller",
+  "version": "1.0.0",
+  "description": "API REST desplegada con AWS CodePipeline, CodeBuild y Elastic Beanstalk",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "test": "jest"
+  },
+  "dependencies": {
+    "express": "^4.21.2"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "supertest": "^7.0.0"
+  }
+}

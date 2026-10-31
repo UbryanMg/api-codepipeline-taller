@@ -1,0 +1,22 @@
+version: 0.2
+
+phases:
+  install:
+    runtime-versions:
+      nodejs: 20
+    commands:
+      - echo "Instalando dependencias"
+      - npm install
+  build:
+    commands:
+      - echo "Ejecutando pruebas"
+      - npm test
+  post_build:
+    commands:
+      - echo "Preparando artefacto para Elastic Beanstalk"
+      - rm -rf node_modules
+      - npm install --omit=dev
+
+artifacts:
+  files:
+    - '**/*'
